@@ -5,23 +5,38 @@
 <div class="jumbotron">
     <h1>Game Store</h1>
     <p class="lead">Game Store is a premier developer and publisher of entertainment software. After establishing the Game Store label in 2016, the company quickly became one of the most popular and well-respected makers of computer games. By focusing on creating well-designed, highly enjoyable entertainment experiences, Game Store has maintained an unparalleled reputation for quality since its inception.</p>
-    <p><a href="http://www.dictionary.com/browse/game" class="btn btn-primary btn-large" target="_blank">Learn more &raquo;</a></p>
+    <p>@Html.ActionLink("Check Our Games", "Index", "Games", null, new { @class = "btn btn-danger btn-large" })</p>
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Casino Games</h2>
-        <p>In the acclaimed selection of games from Game Store you will find a mix of casino games with outstanding graphics, animations & sound that gives a high quality player experience. All games are made as instant play games and are available in 30 languages as standard. Full version games supports Full HD and are dynamically scalable.</p>
-        <p><a href="https://en.wikipedia.org/wiki/Casino_game" class="btn btn-default" target="_blank">Learn more &raquo;</a></p>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="@Url.Content("~/Content/Images/Image-1.jpg")" alt="Casino Games">
+            <div class="caption">
+                <h3>Casino Games</h3>
+                <p>In the acclaimed selection of games from Game Store you will find a mix of casino games with outstanding graphics, animations & sound that gives a high quality player experience. All games are made as instant play games and are available in 30 languages as standard. Full version games supports Full HD and are dynamically scalable.</p>
+                <p><a href="@Url.Action("Index", "Games")" class="btn btn-info" role="button">Read more &raquo;</a></p>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Are you mobile?</h2>
-        <p>A complete tablet and mobile offering. Reach out to your players whenever, wherever. Game Store can provide you with the strongest mobile casino offer on the market.</p>
-        <p><a href="https://en.wikipedia.org/wiki/Mobile_game" class="btn btn-default" target="_blank">Learn more &raquo;</a></p>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="@Url.Content("~/Content/Images/Image-2.jpg")" alt="Are you mobile?">
+            <div class="caption">
+                <h3>Are you mobile?</h3>
+                <p>A complete tablet and mobile offering. Reach out to your players whenever, wherever. Game Store can provide you with the strongest mobile casino offer on the market.</p>
+                <p><a href="@Url.Action("Index", "Games")" class="btn btn-info" role="button">Read more &raquo;</a></p>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Bespoke Gaming</h2>
-        <p>Stand out from competition with a customized solution crafted by Game Store gaming pros to meet your unique needs. Our robust gaming system is designed using the latest available technology allowing for true flexibility in system design and functionality – still granting you a steady, secure & hassle free operation</p>
-        <p><a href="https://en.wikipedia.org/wiki/Gaming" class="btn btn-default" target="_blank">Learn more &raquo;</a></p>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="@Url.Content("~/Content/Images/Image-3.jpg")" alt="Bespoke Gaming">
+            <div class="caption">
+                <h3>Bespoke Gaming</h3>
+                <p>Stand out from competition with a customized solution crafted by Game Store gaming pros to meet your unique needs. Our robust gaming system is designed using the latest available technology allowing for true flexibility in system design and functionality – still granting you a steady, secure & hassle free operation</p>
+                <p><a href="@Url.Action("Index", "Games")" class="btn btn-info" role="button">Read more &raquo;</a></p>
+            </div>
+        </div>
     </div>
 </div>
